@@ -7,7 +7,7 @@ h1 {
   text-align: center;
 }
 
-/*I used container class to not repeat myself*/
+/*I used container class to not repeat myself. If there are common styling, I use class notation */
 .container {
   top: 0px;
   width: 15%;
