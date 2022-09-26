@@ -4,6 +4,7 @@ body {
 h1 {
   color: #3a241d;
   text-align: center;
+
 }
 
 /*I used container class to not repeat myself. If there are common styling, I use class notation */
@@ -12,7 +13,12 @@ h1 {
   width: 15%;
   position: absolute;
   height: 100%;
+  align-items: center;
   padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #eee;
 }
 #left-container {
@@ -26,13 +32,13 @@ h1 {
 .plant-holder {
   position: relative;
   height: 13%;
-  left: -10px;
+ 
 }
 
 .plant {
-  position: absolute;
-  max-width: 150%;
-  max-height: 150%;
+ /* position: absolute;*/
+  max-width: 100%;
+  max-height: 100%;
   z-index: 2;
 }
 .jar-walls {
@@ -106,3 +112,4 @@ h1 {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
+
