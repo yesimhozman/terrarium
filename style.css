@@ -1,6 +1,7 @@
 body {
   font-family: helvetica, arial, sans-serif;
 }
+
 h1 {
   color: #3a241d;
   text-align: center;
@@ -21,6 +22,7 @@ h1 {
   justify-content: space-between;
   background-color: #eee;
 }
+
 #left-container {
   left: 0px;
 }
@@ -28,19 +30,21 @@ h1 {
 #right-container {
   right: 0px;
 }
+
 /* plant and plant-holder classes refer two different objects with different styling. Plants have absolute positioning inside of plant-holders. */
 .plant-holder {
   position: relative;
   height: 13%;
- 
+
 }
 
 .plant {
- /* position: absolute;*/
+  position: relative;
   max-width: 100%;
   max-height: 100%;
   z-index: 2;
 }
+
 .jar-walls {
   height: 80%;
   width: 60%;
@@ -112,4 +116,3 @@ h1 {
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
 }
-
