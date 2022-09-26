@@ -45,18 +45,40 @@ function dragElement(terrariumElement) {
 }
 
 
+
+let plants = document.querySelectorAll(".plant");
+
+plants.forEach((img) => {
+    img.addEventListener('mouseover', function () {
+        img.style.transform = "scale(2)";
+        img.style.transition = "transform 0.25s ease";
+    });
+});
+
+plants.forEach((img) => {
+    img.addEventListener('mouseout', function () {
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+    });
+});
+
+
+/*
+
 img = document.getElementById("plant1");
 img.addEventListener("mouseover", enlargeImg);
 img.addEventListener("mouseout", resetImg);
 // Function to increase image size
 function enlargeImg() {
- 
-  img.style.transform = "scale(1.5)";
-  img.style.transition = "transform 0.25s ease";
+
+    img.style.transform = "scale(2)";
+    img.style.transition = "transform 0.25s ease";
 }
 // Function to reset image size
 function resetImg() {
-  // Set image size to original
-  img.style.transform = "scale(1)";
-  img.style.transition = "transform 0.25s ease";
+    // Set image size to original
+    img.style.transform = "scale(1)";
+    img.style.transition = "transform 0.25s ease";
 }
+
+*/
