@@ -45,4 +45,18 @@ function dragElement(terrariumElement) {
 }
 
 
-
+img = document.getElementById("plant1");
+img.addEventListener("mouseover", enlargeImg);
+img.addEventListener("mouseout", resetImg);
+// Function to increase image size
+function enlargeImg() {
+ 
+  img.style.transform = "scale(1.5)";
+  img.style.transition = "transform 0.25s ease";
+}
+// Function to reset image size
+function resetImg() {
+  // Set image size to original
+  img.style.transform = "scale(1)";
+  img.style.transition = "transform 0.25s ease";
+}
