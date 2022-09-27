@@ -5,7 +5,6 @@ body {
 h1 {
   color: #3a241d;
   text-align: center;
-
 }
 
 /*I used container class to not repeat myself. If there are common styling, I use class notation */
@@ -35,7 +34,6 @@ h1 {
 .plant-holder {
   position: relative;
   height: 13%;
-
 }
 
 .plant {
@@ -43,9 +41,8 @@ h1 {
   max-width: 100%;
   max-height: 100%;
   z-index: 2;
- 
+  transform: scale(1.5);
 }
-
 
 .jar-walls {
   height: 80%;
